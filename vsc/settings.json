@@ -1,0 +1,30 @@
+{
+    "window.commandCenter": true,
+    "workbench.colorTheme": "Catppuccin Frappé",
+    "workbench.statusBar.visible": false,
+    "breadcrumbs.enabled": false,
+    "editor.minimap.enabled": false,
+    "editor.lineNumbers": "relative",
+    "vim.leader": "<Space>",
+    "vim.hlsearch": true,
+    "vim.normalModeKeyBindingsNonRecursive": [
+        { "before": ["<S-h>"], "commands": [":bprevious"] },
+        { "before": ["<S-l>"], "commands": [":bnext"] },
+        { "before": ["leader", "b", "d"], "commands": [":bdelete"] },
+
+        { "before": ["leader", "|"], "commands": [":vsplit"] },
+        {
+            "before": ["g", "h"],
+            "commands": ["editor.action.showDefinitionPreviewHover"]
+        },
+        { "before": ["leader", "leader"], "commands": ["workbench.action.quickOpen"] },
+        { "before": ["<C-d>"], "after": ["<C-d>", "z", "z"] },
+        { "before": ["<C-u>"], "after": ["<C-u>", "z", "z"] }
+    ],
+    "vim.insertModeKeyBindings": [
+        {
+            "before": ["j", "j"],
+            "after": ["<Esc>"]
+        }
+    ]
+}
