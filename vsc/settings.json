@@ -5,6 +5,8 @@
     "breadcrumbs.enabled": false,
     "editor.minimap.enabled": false,
     "editor.lineNumbers": "relative",
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
     "vim.leader": "<Space>",
     "vim.hlsearch": true,
     "vim.normalModeKeyBindingsNonRecursive": [
